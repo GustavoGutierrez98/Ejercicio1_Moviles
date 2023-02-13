@@ -1,0 +1,41 @@
+void main() {
+  //CONSTANTE
+  const fechaNacimiento ='31/10/1998';
+  
+  //VARIABLES
+  //final variable que no cambia despues de su primera asignacion
+  final numControl='17540337';
+  
+  var nombre='Gustavo';
+  //nombre = 21;
+  
+  dynamic apellidos='Gutierrez';
+  apellidos=21;
+  apellidos='Gustavo Gutierrez';
+  
+  print(numControl);
+  print('Alumno $numControl $nombre $apellidos');
+  
+  int materiasReprobadas = 4;
+  double promedio=76.98;
+  bool esAlumno=true;
+    
+  List<int> digitos =[1,2,3,4,5,6,7,8,9];
+  //agregar un valor a una lista
+  digitos.add(0);
+ 
+  print(digitos);
+  print(digitos[2]);
+  
+  List<dynamic> listaMejor=['a',1,true,2,3];
+  print(listaMejor);
+  
+  //Mapas
+  Map<dynamic,String> alumnosD={
+    '17540336':'Mario',
+    '17540265':'Luis'
+  };
+  alumnosD.addAll({17540732:'Raul'});
+  print(alumnosD);
+  print(alumnosD[17540265]);
+}
